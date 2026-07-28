@@ -1,0 +1,11 @@
+node_modules/
+*.apk
+*.apks
+*.xapk
+*.tmp
+*.part
+coverage/
+.env
+.env.*
+!.env.example
+npm-debug.log*

@@ -1,0 +1,44 @@
+{
+  "name": "@apkworld/cli",
+  "version": "0.1.0",
+  "description": "Download and verify Android packages from APKWorld.",
+  "type": "module",
+  "bin": {
+    "apkworld": "./src/cli.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/cli.js && node --check src/api.js && node --check src/download.js && node --check src/options.js",
+    "prepack": "npm run check && npm test"
+  },
+  "keywords": [
+    "android",
+    "apk",
+    "xapk",
+    "cli",
+    "checksum",
+    "apkworld"
+  ],
+  "author": "APKWorld",
+  "license": "Apache-2.0",
+  "homepage": "https://apkworld.com/apk-downloader",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apkworldcom/apkworld-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/apkworldcom/apkworld-cli/issues"
+  },
+  "engines": {
+    "node": ">=20.18"
+  },
+  "dependencies": {
+    "undici": "^7.13.0"
+  }
+}
